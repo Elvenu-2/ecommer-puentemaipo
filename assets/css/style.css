@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.grid-padre{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-hijo{
+    border: 1px solid green
+}
+
+.grid-hijo img{
+    width: 50%;
+}

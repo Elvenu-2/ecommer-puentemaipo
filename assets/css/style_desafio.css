@@ -1,0 +1,70 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-container{
+    display: grid ;
+    grid-template-areas: 
+     "header header"
+     "aside main"
+     "footer footer";
+    grid-template-columns: 10% 1fr;
+}
+
+main{
+    grid-area: main;
+    height: 80vh;
+    background-color: lightgray;
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+nav{
+    grid-area: header;
+    background-color: rgb(14, 64, 117);
+    display: flex;
+    justify-content: center;
+    color: white
+}
+aside {
+    grid-area: aside;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside ul li{
+    list-style: none;
+    line-height: 40px;
+}
+footer{
+    grid-area: footer;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    color: rgb(196, 195, 195);
+}
+
+.card{
+    width: 100px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-top: 10px;
+}
+.card_button{
+    color: white;
+    background-color:rgb(14, 64, 117);
+   
+}
+.card img{
+    width: 100px;
+    height: 50px;
+}
